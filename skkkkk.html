@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Styling</title>
+    <style>
+        table {
+            width: 500px;
+            border: 1px solid black;
+            border-spacing: 2px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        th {
+            background-color: #7676;
+        }
+        td {
+            background-color: #3456;
+        }
+    </style>
+</head>
+<body>
+    <table id="myTable">
+        <tr>
+            <th>Math</th>
+            <th>English</th>
+            <th>programming</th>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>44</td>
+            <td>55</td>
+        </tr>
+        <tr>
+            <td>88</td>
+            <td>66</td>
+            <td>33</td>
+        </tr>
+
+    </table>
+    <p><b>Change The Table Width</b></p>
+    <button onclick="changeWidth('200px')">Width 200px</button>
+    <button onclick="changeWidth('500px')">Width 500px</button>
+    <p><b>Change The Border and the Spacing Width</b></p>
+    <button onclick="changeBorderAndSpacingWidth('1px solid black', '1px')">1px</button>
+    <button onclick="changeBorderAndSpacingWidth('10px solid black', '10px')">10px</button>
+    <button onclick="changeBorderAndSpacingWidth('20px solid black', '20px')">20px</button>
+    <p><b>Change The Table Color</b></p>
+    <button onclick="changeColor('#F9B572')" style="background-color: #6767; width: 40px; height: 20px;"></button>
+    <button onclick="changeColor('#99B080')" style="background-color: #784297; width: 40px; height: 20px;"></button>
+    <button onclick="changeColor('#748E63')" style="background-color: #9788; width: 40px; height: 20px;"></button>
+    <button onclick="changeColor('#FAF8ED')" style="background-color: #0908; width: 40px; height: 20px;"></button>
+    <p></p>
+    <button onclick="resetStyle()">Reset</button>
+    <script src="1024.js"></script>
+</body>
+</html>
